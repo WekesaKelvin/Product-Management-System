@@ -1,4 +1,4 @@
-// src/app/services/product-api.service.ts
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from '../product.model';
