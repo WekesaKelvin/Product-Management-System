@@ -1,0 +1,101 @@
+.container {
+  background-image: url('/assets/1Park-New.webp'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.table-container {
+  background: rgba(106, 168, 209, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;           
+  max-width: 800px;     
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.table-container h2 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+
+.add-button {
+  background: #004A99;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;       
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  background: #003366;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  color: white; 
+}
+
+
+th {
+  background-color: #004A99;
+}
+
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+.edit-btn {
+  background: #355cdc;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.edit-btn:hover {
+  background: #218838;
+}
+
+
+.delete-btn {
+  background: #355cdc;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}

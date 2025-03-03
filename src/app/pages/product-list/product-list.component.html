@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="table-container">
+    <h2>Product List</h2>
+
+    <button class="add-button" [routerLink]="['/form']">
+      Add New Product
+    </button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price (ksh)</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Use async pipe -->
+        <tr *ngFor="let product of (products$ | async)">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>
+            <button class="edit-btn" [routerLink]="['/form', product.id]">
+              Edit
+            </button>
+            <button class="delete-btn" (click)="deleteProduct(product.id)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
