@@ -7,8 +7,6 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { routes } from './app.routes';
-
-// Import your product reducer and effects
 import { productReducer } from './store/product.reducer';
 import { ProductEffects } from './store/product.effects';
 
